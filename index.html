@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Hub 101</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>setting up a github repository for the first time</h1>
@@ -16,14 +17,50 @@
             <li>git remote add origin<repository-url></li>
             <li>git push -m origin main</li>
         </ul>
-        <h2>updating a git hub repository</h2>
-        <p>when updating a git repository or pushing to an existing  repository reuse the following steps
-            <ol>
-                <li>git add.</li>
-                <li>git commit -m"update commit"</li>
-                <li>git push origin main</li>
-            </ol>
-        </p>
-    </p>
+         <!-- 3 Requested Images -->
+    <section class="image-gallery">
+      <figure class="image-card">
+        <img src="download (3).webp" alt="A laptop computer ">
+        <figcaption>1. Computer Setup</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="download (82).jpg" alt="A developer using a computer">
+        <figcaption>2. Developer Workflow</figcaption>
+      </figure>
+
+      <figure class="image-card">
+        <img src="download (84).jpg" alt="Command line terminal screen">
+        <figcaption>3. Command Line Terminal</figcaption>
+      </figure>
+    </section>
+    <!-- Section 2 -->
+    <section class="card">
+      <h2>Updating a GitHub repository</h2>
+      <p>When updating a Git repository or pushing changes to an existing repository, use the following steps:</p>
+      <ol>
+        <li><code>git add .</code></li>
+        <li><code>git commit -m "update commit"</code></li>
+        <li><code>git push origin main</code></li>
+      </ol>
+    </section>
+  </div>
+    <!-- Interactive Button with Alert -->
+    <div class="button-wrapper" style="margin-top: 20px;">
+      <button onclick="showAlert()" style="padding: 10px 20px; font-size: 16px; background-color: #2ea44f; color: white; border: none; border-radius: 6px; cursor: pointer;">
+        Ready to Push!
+      </button>
+    </div>
+  </div>
+
+  <!-- JavaScript for the Alert -->
+  <script>
+    function showAlert() {
+      alert("Great job! Remember to double-check your repository URL before pushing.");
+    }
+  </script>
+
+
 </body>
 </html>
+
